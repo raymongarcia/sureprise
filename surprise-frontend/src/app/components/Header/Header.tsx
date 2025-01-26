@@ -137,7 +137,7 @@ export default function Header() {
             <Button variant="outline">Login</Button>
           </div>
           <div className="p-4 pl-48">
-            <div className="flex justify-between gap-3">
+            <div className="flex justify-between  gap-3">
               <FiPhone className="mt-1" />
               <p>+ 63 966 ( 426 ) ( 8092 )</p>
             </div>
@@ -213,7 +213,7 @@ export default function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        <div className="flex gap-12">
+        <div className="flex gap-12 text-sm">
           <div className="flex gap-3">
             <FiUser className="mt-[0.20rem]" />
             <p>Account</p>
