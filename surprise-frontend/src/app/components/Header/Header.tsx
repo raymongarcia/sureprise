@@ -74,7 +74,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function Header() {
   return (
-    <section className="w-full">
+    <section className="bg-white">
       <div className="flex justify-center">
       <NavigationMenu>
         <NavigationMenuList>
