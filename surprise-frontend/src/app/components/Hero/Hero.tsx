@@ -1,7 +1,10 @@
+"use client";
+
 import BackgroundVideo from "next-video/background-video";
 import birthdayGreeting from "../../../../videos/birthdayGreeting.mp4.json";
 
 export default function Hero() {
+  console.log(birthdayGreeting.sources?.[0]?.src)
   return (
     <div className="text-white">
       <BackgroundVideo
