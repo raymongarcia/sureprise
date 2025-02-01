@@ -2,6 +2,7 @@ import * as React from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Trending from "./components/Trending/Trending"
+import Categories from "./components/Categories/Categories";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Trending />
+      <Categories />
     </div>
   );
 }
