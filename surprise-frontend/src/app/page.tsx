@@ -1,8 +1,8 @@
 import * as React from "react";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Trending from "./components/Trending/Trending"
-import Categories from "./components/Categories/Categories";
+import Header from "./components/layout/Header/Header";
+import Hero from "./components/layout/Hero/Hero";
+import Trending from "./components/layout/Trending/Trending"
+import Categories from "./components/layout/Categories/Categories";
 
 export default function Home() {
   return (
