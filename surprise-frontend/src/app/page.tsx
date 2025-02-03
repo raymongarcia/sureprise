@@ -3,6 +3,7 @@ import Header from "./components/layout/Header/Header";
 import Hero from "./components/layout/Hero/Hero";
 import Trending from "./components/layout/Trending/Trending"
 import Categories from "./components/layout/Categories/Categories";
+import JustForYou from "./components/layout/JustForYou/JustForYou";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Trending />
       <Categories />
+      <JustForYou />
     </div>
   );
 }

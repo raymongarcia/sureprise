@@ -27,7 +27,7 @@ export default function Categories() {
         <div className="card mt-7 grid grid-cols-8 w-full h-80">
           {categories.map((category) => {
             return (
-              <Button className="child-card bg-pink-300 h-40 border hover:bg-slate-300 text-slate-700 flex justify-center items-center">
+              <Button key={category} className="child-card bg-pink-300 h-40 border hover:bg-slate-300 text-slate-700 flex justify-center items-center">
                 <div>{category}</div>
               </Button>
             );

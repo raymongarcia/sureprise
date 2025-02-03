@@ -220,7 +220,7 @@ export default function Header() {
           </div>
           <div className="flex gap-3">
             <CgShoppingCart className="mt-[0.20rem]" />
-            <p>Account</p>
+            <p>My Cart</p>
           </div>
         </div>
       </div>
