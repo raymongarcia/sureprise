@@ -1,10 +1,12 @@
-import { useState } from "react";
+"use client";
+import React, { useState } from "react";
 import { Button } from "../../ui/button";
 import { Card } from "../../ui/card";
 import Image from "next/image";
 
 export default function JustForYou() {
   const [] = useState();
+  console.log("2"+2+"2");
   return (
     <section id="JustForYou">
       <div className="flex flex-col text-start pl-60 pb-20 pr-60">
