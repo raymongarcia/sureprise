@@ -10,7 +10,7 @@ export default function JustForYou() {
       <div className="flex flex-col text-start pl-60 pb-20 pr-60">
         <h1 className="font-bold text-[24px]">Just For You</h1>
         <div className="mt-7 w-full h-full flex flex-row justify-center items-center flex-wrap">
-          <Card className="h-64 w-52">
+          {/* <Card className="h-64 w-52">
             <Image
               src=""
               width={500}
@@ -81,7 +81,7 @@ export default function JustForYou() {
               height={500}
               alt="Picture of the author"
             />
-          </Card>
+          </Card> */}
         </div>
       </div>
       <div className="flex justify-center items-center">
