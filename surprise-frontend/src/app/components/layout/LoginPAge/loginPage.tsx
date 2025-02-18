@@ -11,6 +11,29 @@ export default function LoginPage(){
         console.log('Email:', email);
         console.log('Password:', password);
     };
+    
+    const login = async () => {
+        try {
+            const response = await fetch('https://api.example.com/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email, password }),
+            });
+
+            if (!response.ok) {
+                throw new Error('Login failed');
+            }
+
+            const data = await response.json();
+            console.log('Login successful:', data);
+            // Handle successful login (e.g., save token, redirect)
+        } catch (error) {
+            console.error('Error:', error);
+            // Handle login error (e.g., show error message)
+        }
+    };
 
     return (
         <div className="login-page">
