@@ -134,7 +134,9 @@ export default function Header() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <div className="p-4">
-            <Button variant="outline">Login</Button>
+            <Link href="/login">
+              <Button variant="outline">Login</Button>
+            </Link>
           </div>
           <div className="p-4 pl-48">
             <div className="flex justify-between  gap-3">

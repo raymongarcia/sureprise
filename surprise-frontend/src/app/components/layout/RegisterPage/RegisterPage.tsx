@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 const RegisterPage: React.FC = () => {
     const [username, setUsername] = useState('');
@@ -44,6 +45,7 @@ const RegisterPage: React.FC = () => {
                 </div>
                 <button type="submit">Register</button>
             </form>
+            <p>Already have an account? <Link href="/login">Login</Link></p>
         </div>
     );
 };
