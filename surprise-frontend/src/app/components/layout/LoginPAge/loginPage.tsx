@@ -36,7 +36,7 @@ export default function LoginPage(){
     };
 
     return (
-        <div className="login-page">
+        <div className="login">
             <h2>Login</h2>
             <form onSubmit={handleLogin}>
                 <div className="form-group">
