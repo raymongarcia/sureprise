@@ -1,5 +1,5 @@
+"use client";
 import React, { useState } from 'react';
-import Link from 'next/link';
 
 const RegisterPage: React.FC = () => {
     const [username, setUsername] = useState('');
@@ -9,35 +9,40 @@ const RegisterPage: React.FC = () => {
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
         // Handle registration logic here
-        console.log('Registering:', { username, email, password });
+        console.log('Username:', username);
+        console.log('Email:', email);
+        console.log('Password:', password);
     };
 
     return (
         <div>
-            <h2>Register</h2>
+            <h1>Register</h1>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label>Username:</label>
+                    <label htmlFor="username">Username:</label>
                     <input
                         type="text"
+                        id="username"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                         required
                     />
                 </div>
                 <div>
-                    <label>Email:</label>
+                    <label htmlFor="email">Email:</label>
                     <input
                         type="email"
+                        id="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
                     />
                 </div>
                 <div>
-                    <label>Password:</label>
+                    <label htmlFor="password">Password:</label>
                     <input
                         type="password"
+                        id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
@@ -45,7 +50,6 @@ const RegisterPage: React.FC = () => {
                 </div>
                 <button type="submit">Register</button>
             </form>
-            <p>Already have an account? <Link href="/login">Login</Link></p>
         </div>
     );
 };
