@@ -5,13 +5,27 @@ const RegisterPage: React.FC = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [message, setMessage] = useState('');
 
-    const handleSubmit = (event: React.FormEvent) => {
+    const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
-        // Handle registration logic here
-        console.log('Username:', username);
-        console.log('Email:', email);
-        console.log('Password:', password);
+        try {
+            const response = await fetch('/api/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name: username, email, password }),
+            });
+
+            if (response.ok) {
+                setMessage('User registered successfully!');
+            } else {
+                setMessage('Failed to register user.');
+            }
+        } catch (error) {
+            setMessage('An error occurred. Please try again.');
+        }
     };
 
     return (
@@ -50,6 +64,7 @@ const RegisterPage: React.FC = () => {
                 </div>
                 <button type="submit">Register</button>
             </form>
+            {message && <p>{message}</p>}
         </div>
     );
 };
