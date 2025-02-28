@@ -1,7 +1,7 @@
 "use client";
 
 import BackgroundVideo from "next-video/background-video";
-import birthdayGreeting from "../../../../../public/_next-video/birthdayGreeting.mp4.json";
+import birthdayGreeting from "../../../../../videos/get-started.mp4.json";
 
 export default function Hero() {
   return (
