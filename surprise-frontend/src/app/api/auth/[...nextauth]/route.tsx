@@ -1,4 +1,4 @@
-import NextAuth from "next-auth/next";
+import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { connectMongoDB } from "@/lib/mongodb";
 import bcrypt from "bcryptjs";
@@ -10,8 +10,11 @@ export const authOptions = {
             name: "credentials",
             credentials: {},
 
-            async authorize(credentials) {
-                const { email, password } = credentials;
+            async authorize(credentials, req) {
+                if (!credentials) {
+                    return null;
+                }
+                const { email, password } = credentials as { email: string; password: string };
                 try {
                     await connectMongoDB();
                     const user = await User.findOne({ email });
@@ -34,7 +37,7 @@ export const authOptions = {
         })
     ],
     session: {
-        strategy: "jwt",
+        strategy: 'jwt' as 'jwt',
     },
     secret: process.env.NEXTAUTH_SECRET,
     pages: {
