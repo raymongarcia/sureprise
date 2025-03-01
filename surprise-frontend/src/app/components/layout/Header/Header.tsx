@@ -219,15 +219,17 @@ export default function Header() {
             </DropdownMenu>
           </div>
         </div>
-        <div className="flex gap-12 text-sm">
+        <div className="flex text-sm">
           {/* <div className="flex gap-3">
             <FiUser className="mt-[0.20rem]" />
             <p>Account</p>
           </div> */}
-          <div className="flex gap-3">
-            <CgShoppingCart className="mt-[0.20rem]" />
-            <p>My Cart</p>
-          </div>
+          <Link href="/cart">
+            <div className="flex gap-3">
+              <CgShoppingCart className="mt-[0.20rem]" />
+              <p>My Cart</p>
+            </div>
+          </Link>
         </div>
       </div>
     </section>
