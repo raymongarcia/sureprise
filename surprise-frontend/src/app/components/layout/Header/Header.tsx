@@ -36,39 +36,34 @@ import { CgShoppingCart } from "react-icons/cg";
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title: "Birthday Surprises",
+    href: "/categories/birthday-surprises",
+    description: "Unique and memorable birthday surprise ideas and packages.",
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
+    title: "Anniversary Surprises",
+    href: "/categories/anniversary-surprises",
+    description: "Romantic and thoughtful anniversary surprise plans.",
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    title: "Corporate Gifts",
+    href: "/categories/corporate-gifts",
+    description: "Professional and personalized corporate gift options.",
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "Wedding Services",
+    href: "/categories/wedding-services",
+    description: "Comprehensive wedding planning and surprise services.",
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+    title: "Holiday Specials",
+    href: "/categories/holiday-specials",
+    description: "Exclusive holiday surprise packages and deals.",
   },
   {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    title: "Custom Surprises",
+    href: "/categories/custom-surprises",
+    description: "Tailor-made surprises for any occasion.",
   },
 ];
 
