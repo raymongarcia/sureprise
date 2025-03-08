@@ -1,6 +1,6 @@
 import { Button } from "../../ui/button";
 
-const categories = [
+export const categories = [
   "Birthday",
   "Valentine's Day",
   "Anniversary",
