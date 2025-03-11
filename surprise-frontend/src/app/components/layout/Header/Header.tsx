@@ -14,7 +14,7 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Button } from "@/app/components/ui/button";
-import { FiPhone, FiUser, FiChevronDown } from "react-icons/fi";
+import { FiPhone, FiUser, FiChevronDown, FiMapPin } from "react-icons/fi";
 import happyMushroom from "@/assets/happy-mushroom.png";
 import Image from "next/image";
 import { Input } from "@/app/components/ui/input";
@@ -34,6 +34,7 @@ import {
 } from "@/app/components/ui/dropdown-menu";
 import { CgShoppingCart } from "react-icons/cg";
 import { categories } from "@/app/components/layout/Categories/Categories"; // Import categories
+import MyGoogleMap from "@/components/GoogleMap"; // Import the Google Map component
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -138,6 +139,10 @@ export default function Header() {
           <div className="flex justify-between gap-3">
             <FiPhone className="mt-1" />
             <p>+ 63 966 ( 426 ) ( 8092 )</p>
+          </div>
+          <div className="flex justify-between gap-3">
+            <FiMapPin className="mt-1" />
+            <p>Location</p>
           </div>
         </div>
       </div>
