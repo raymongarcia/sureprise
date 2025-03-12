@@ -32,9 +32,11 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sureprise</title>
       </head>
-      <Header />
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
-      <BottomContent />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Header />
+        {children}
+        <BottomContent />
+      </body>
     </html>
   );
 }
