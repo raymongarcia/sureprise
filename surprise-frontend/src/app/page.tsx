@@ -4,7 +4,7 @@ import Trending from "./components/layout/Trending/Trending"
 import Categories from "./components/layout/Categories/Categories";
 import JustForYou from "./components/layout/JustForYou/JustForYou";
 
-export default function Home() {
+export function Home() : React.FC {
   return (
     <div className="bg-[#e7e8ec] min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
       <Hero />
